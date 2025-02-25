@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Иванов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2620097).
-* Наставник: `Неизвестно`.
+* Наставник: [Кенан Агаев](https://htmlacademy.ru/profile/kenakula).
 
 ---
 
