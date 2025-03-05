@@ -1,12 +1,166 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  <body>
+    <header class="page-header">
+      <a class="header-logo" href="index.html">
+        <img class="logo" src="#" alt="Логотип города Седона">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span class="like-total">12</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link button" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-index">
+      <section class="hero">
+        <h1 class="visually-hidden">Поиск отелей в городе Седона</h1>
+        <!-- Переделать и назвать что-то типа, Поиск отелей в городе Седона.  -->
+        <img class="hero-image" src="#" alt="Изображение Гранд-Каньона, в центре изображения Логотип города Седона">
+        <p class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="hero-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle">Настоящий городок</h3>
+            <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="#" alt="Изображение ресторанов города Седона">
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle">Небольшая площадь</h3>
+            <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle">Красивая дорога</h3>
+            <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle">Мало туристов</h3>
+            <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-subtitle">Там есть мост дьявола</h3>
+            <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img src="#" alt="Изображение Гранд-Каньона">
+          </li>
+        </ul>
+      </section>
+
+      <section class="entertainment">
+        <h2 class="visually-hidden">Отдых и развлечения</h2>
+        <p class="entertainment-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <p class="entertainment-description">Опытный персонал и качественное обслуживание!</p>
+        <ul class="entertainment-list">
+          <li class="entertainment-item">
+            <h3 class="entertainment-subtitle">Жильё</h3>
+            <p class="entertainment-description">Рекомендуем пожить в настоящем мотеле,
+              всё как в кино!</p>
+          </li>
+          <li class="entertainment-item">
+            <h3 class="entertainment-subtitle">Еда</h3>
+            <p class="entertainment-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="entertainment-item">
+            <h3 class="entertainment-subtitle">Сувениры</h3>
+            <p class="entertainment-description">Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="hotel-search">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <p class="hotel-search-title">Заинтересовались?</p>
+        <p class="hotel-search-description">Не только китайского, но и настоящего местного производства!</p>
+        <a class="navigation-link button" href="catalog.html">Поиск гостиницы в седоне</a>
+        <!-- Класс взят с кнопки "Хочу сюда". Это правильно или нет?-->
+      </section>
+      <section class="subscribe">
+        <h2 class="visually-hidden">Подписка</h2>
+        <img class="subscribe-image" src="#" alt="Изображение Гранд-Каньона, заблюреное">
+        <!-- Нужно-ли это изображение или добавить его через CSS? -->
+        <p class="subscribe-title">Подпишитесь на рассылку</p>
+        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="subscribe-email">
+            <span class="visually-hidden">Email</span>
+            <input type="email" name="subscribe-email" placeholder="Ваш e-mail">
+          </label>
+          <!-- Альтернативный вариант и вопрос обязательно ли задавать label? -->
+          <!-- <p class="subscribe-form-email">
+          <label for="subscribe-email">
+            <span class="visually-hidden">Email</span>
+          </label>
+          <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-email">
+        </p> -->
+
+          <button class="button" type="submit">Подписаться</button>
+        </form>
+      </section>
+
+    </main>
+    <footer class="page-footer">
+      <section class="social-media">
+        <h3 class="visually-hidden">Социальные сети</h3>
+        <ul class="social-media-list">
+          <li class="social-media-item">
+            <a class="social-media-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">В контакте</span>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a class="social-media-link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграмм</span>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="contacts">
+        <h3 class="visually-hidden">Контакты</h3>
+        <a class="contacts-phone" href="tel:+78005558628">+7 (812) 812-12-12</a>
+        <!-- Нужно-ли телефон оборачивать в тег адрес? <address class="contacts-address"></address> -->
+      </section>
+      <a class="footer-logo" href=" https://htmlacademy.ru/">
+        <img class="logo" src="#" alt="Логотип HTML академии">
+      </a>
+    </footer>
+    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
 
   </body>
+
 </html>
