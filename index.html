@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -46,8 +47,6 @@
     <main class="main-index">
       <section class="hero">
         <h1 class="visually-hidden">Поиск отелей в городе Седона</h1>
-        <!-- Фото каньона на заднем фоне нужно сюда добавить, или сделать это через CSS? -->
-        <!-- <img class="hero-image-background" src="images/index-background.jpg" width="1200" height="485" alt="Гранд-Каньон> -->
         <img class="hero-image" src="images/welcome.svg" width="458" height="352" lang="en"
           alt="«Welcome to the gorgeous Sedona, because the Grand Canyon sucks!»">
         <p class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -104,14 +103,14 @@
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="hotel-search-title">Заинтересовались?</p>
-        <p class="hotel-search-description">Не только китайского, но и настоящего местного производства!</p>
+        <p class="hotel-search-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
         <a class="navigation-link button" href="catalog.html">Поиск гостиницы в седоне</a>
       </section>
       <section class="subscribe">
         <h2 class="visually-hidden">Подписка</h2>
-        <img class="subscribe-image" src="images/subscribe.jpg" width="1200" height="415"
-          alt="Изображение Гранд-Каньона, заблюреное">
-        <!-- Или зображение добавить через CSS -->
+        <!-- <img class="subscribe-image" src="images/subscribe.jpg" width="1200" height="415"
+          alt="Изображение Гранд-Каньона, заблюреное"> -->
+        <!-- Или зображение добавить через CSS? -->
         <p class="subscribe-title">Подпишитесь на рассылку</p>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -119,14 +118,6 @@
             <span class="visually-hidden">Email</span>
             <input type="email" name="subscribe-email" placeholder="Ваш e-mail">
           </label>
-          <!-- Альтернативный вариант и вопрос обязательно ли задавать label? -->
-          <!-- <p class="subscribe-form-email">
-          <label for="subscribe-email">
-            <span class="visually-hidden">Email</span>
-          </label>
-          <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-email">
-        </p> -->
-
           <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -138,17 +129,20 @@
         <h3 class="visually-hidden">Социальные сети</h3>
         <ul class="social-media-list">
           <li class="social-media-item">
-            <a class="social-media-link" href="https://vk.com/htmlacademy">
+            <a class="social-media-link" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">
               <span class="visually-hidden">В контакте</span>
             </a>
           </li>
           <li class="social-media-item">
-            <a class="social-media-link" href="https://t.me/htmlacademy">
+            <a class="social-media-link" href="https://t.me/htmlacademy" target="_blank" rel="noopener noreferrer">
               <span class="visually-hidden">Телеграмм</span>
             </a>
           </li>
           <li class="social-media-item">
-            <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+            <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
+              rel="noopener noreferrer">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -157,11 +151,10 @@
         <h3 class="visually-hidden">Контакты</h3>
         <a class="contacts-phone" href="tel:+78005558628">+7 (812) 812-12-12</a>
       </section>
-      <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" rel="noopener noreferrer">
         <img class="logo" src="images/brand-htmlacademy.svg" width="115" height="33" alt="Логотип HTML академии">
       </a>
     </footer>
-    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
 
   </body>
 
